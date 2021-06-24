@@ -6,14 +6,14 @@ La aplicación se basa en el Anime de OnePiece, donde se tiene los Assents y inf
 
 ### Personajes
 
-####Protagonistas
-#####Luffy
-#####Zoro
-#####Usopp
-#####Nami
-#####Sanji
-#####Chopper
+#### Protagonistas
+##### Luffy
+##### Zoro
+##### Usopp
+##### Nami
+##### Sanji
+##### Chopper
 
-####Villanos
-####Aliados
+#### Villanos
+#### Aliados
 
