@@ -121,7 +121,7 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="sbGoodCharacters" id="N7N-wy-Cu7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1Wx-WD-720"/>
-                    <navigationItem key="navigationItem" id="osg-cg-XMu"/>
+                    <navigationItem key="navigationItem" title="Tripulación Sombrero Paja" id="osg-cg-XMu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GU5-LD-24f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +132,7 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="sbBadCharacters" id="soS-ve-UlN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="snN-c8-hfh"/>
-                    <navigationItem key="navigationItem" id="3vf-vw-VqJ"/>
+                    <navigationItem key="navigationItem" title="Otros Personajes" id="3vf-vw-VqJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcM-w7-QgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

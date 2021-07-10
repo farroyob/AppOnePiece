@@ -39,12 +39,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-ME-ytU">
                                 <rect key="frame" x="16" y="354" width="382" height="528"/>
                                 <color key="backgroundColor" name="clBackGroundTxt"/>
-                                <mutableString key="text">One Piece es un anime y manga escrito e ilustrado por Eiichirō Oda y actualmente es el manga más comprado en el mundo. El anime que se transmite en Fuji TV desde el 20 de octubre de 1999 el cual está en emisión actualmente. 
+                                <string key="text">One Piece es un anime y manga escrito e ilustrado por Eiichirō Oda y actualmente es el manga más comprado en el mundo. El anime que se transmite en Fuji TV desde el 20 de octubre de 1999 el cual está en emisión actualmente. 
 
 La serie comienza con la ejecución de Gol D. Roger, El Rey de los Piratas. Antes de morir mención de su gran tesoro legendario, el One Piece y que puede ser tomado por quien lo encuentre. Esto inicia la Gran Era Pirata.
 
 Veinte años después de la muerte de Roger, el One Piece sigue sin ser encontrado. El protagonista llamado Monkey D. Luffy, comienza su aventura para encontrar el One Piece y autoproclamarse a él mismo como el nuevo Rey de los Piratas. Con el fin de crear y convertirse en el capitán de una tripulación propia, el muchacho funda los Piratas de Sombrero de Paja. En sus viajes, la tripulación se enfrenta a varios enemigos poderosos y enfrentan grandes aventuras.
-</mutableString>
+</string>
                                 <color key="textColor" name="clApp"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -75,7 +75,7 @@ Veinte años después de la muerte de Roger, el One Piece sigue sin ser encontra
             <color red="0.8399999737739563" green="0.33000001311302185" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="clBackGroundTxt">
-            <color red="0.93000000000000005" green="0.70999999999999996" blue="0.76000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93000000715255737" green="0.70999997854232788" blue="0.75999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

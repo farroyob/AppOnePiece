@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vc Good Characters Detail-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="vcGoodCharactersDetail" customModule="OnePiece" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZHg-36-sWM" userLabel="gmCharacter">
+                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="B92-wg-TAc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-11-bnv" userLabel="lbFondo">
+                                <rect key="frame" x="0.0" y="313" width="414" height="27.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9tr-5I-KsD" userLabel="tvInfo">
+                                <rect key="frame" x="16" y="354" width="382" height="488"/>
+                                <color key="backgroundColor" name="clBackGroundTxt"/>
+                                <color key="textColor" name="clApp"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-Nd-v9B" userLabel="lbName">
+                                <rect key="frame" x="0.0" y="313" width="414" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="clApp"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9tr-5I-KsD" secondAttribute="bottom" constant="20" id="6YM-ZX-PDe"/>
+                            <constraint firstItem="ZHg-36-sWM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="D72-yl-Rif"/>
+                            <constraint firstItem="e4o-Nd-v9B" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="225" id="Fn7-jC-8c3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZHg-36-sWM" secondAttribute="trailing" id="JXA-o7-6b0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5SU-11-bnv" secondAttribute="trailing" id="LMg-DS-TTk"/>
+                            <constraint firstItem="e4o-Nd-v9B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="M3E-qx-bBB"/>
+                            <constraint firstItem="5SU-11-bnv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aHv-fE-apE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9tr-5I-KsD" secondAttribute="trailing" constant="16" id="aYj-rP-MW7"/>
+                            <constraint firstItem="ZHg-36-sWM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ipk-aQ-cNd"/>
+                            <constraint firstItem="e4o-Nd-v9B" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ncF-oK-xYX"/>
+                            <constraint firstItem="9tr-5I-KsD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rtP-Gy-V4z"/>
+                            <constraint firstItem="9tr-5I-KsD" firstAttribute="top" secondItem="ZHg-36-sWM" secondAttribute="bottom" constant="16" id="w9j-nl-t9i"/>
+                            <constraint firstItem="5SU-11-bnv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="225" id="w9z-5v-yo4"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="lbName" destination="e4o-Nd-v9B" id="lRD-ou-3Li"/>
+                        <outlet property="mgCharacter" destination="ZHg-36-sWM" id="MGx-SV-tb8"/>
+                        <outlet property="tvInfo" destination="9tr-5I-KsD" id="h9F-tb-U0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="clApp">
+            <color red="0.8399999737739563" green="0.33000001311302185" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="clBackGroundTxt">
+            <color red="0.93000000715255737" green="0.70999997854232788" blue="0.75999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
