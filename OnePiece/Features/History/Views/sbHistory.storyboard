@@ -4,11 +4,24 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LXi-4L-ZwZ">
+            <objects>
+                <navigationController id="eRf-9R-yJV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qYL-jx-MtD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ug-ta-quw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1504" y="116"/>
+        </scene>
         <!--Vc History-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -17,26 +30,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53R-iL-YJk">
-                                <rect key="frame" x="199" y="295" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mgHistoryHeader" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-0x-2wk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="XbV-DN-1kg"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-ME-ytU">
+                                <rect key="frame" x="16" y="354" width="382" height="528"/>
+                                <color key="backgroundColor" name="clBackGroundTxt"/>
+                                <mutableString key="text">One Piece es un anime y manga escrito e ilustrado por Eiichirō Oda y actualmente es el manga más comprado en el mundo. El anime que se transmite en Fuji TV desde el 20 de octubre de 1999 el cual está en emisión actualmente. 
+
+La serie comienza con la ejecución de Gol D. Roger, El Rey de los Piratas. Antes de morir mención de su gran tesoro legendario, el One Piece y que puede ser tomado por quien lo encuentre. Esto inicia la Gran Era Pirata.
+
+Veinte años después de la muerte de Roger, el One Piece sigue sin ser encontrado. El protagonista llamado Monkey D. Luffy, comienza su aventura para encontrar el One Piece y autoproclamarse a él mismo como el nuevo Rey de los Piratas. Con el fin de crear y convertirse en el capitán de una tripulación propia, el muchacho funda los Piratas de Sombrero de Paja. En sus viajes, la tripulación se enfrenta a varios enemigos poderosos y enfrentan grandes aventuras.
+</mutableString>
+                                <color key="textColor" name="clApp"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="clBackGroundTxt"/>
+                        <constraints>
+                            <constraint firstItem="u5P-0x-2wk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3gk-zA-wxQ"/>
+                            <constraint firstItem="cfO-ME-ytU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Kkt-k4-K0l"/>
+                            <constraint firstItem="cfO-ME-ytU" firstAttribute="top" secondItem="u5P-0x-2wk" secondAttribute="bottom" constant="16" id="Qpn-fC-hfQ"/>
+                            <constraint firstItem="cfO-ME-ytU" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="20" id="gzk-SK-2Cc"/>
+                            <constraint firstItem="u5P-0x-2wk" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ja6-Bc-iMs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cfO-ME-ytU" secondAttribute="trailing" constant="16" id="oth-Ez-hke"/>
+                            <constraint firstItem="u5P-0x-2wk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wK1-xf-CbI"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="mgHistoryHeader" width="512" height="288"/>
+        <namedColor name="clApp">
+            <color red="0.8399999737739563" green="0.33000001311302185" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="clBackGroundTxt">
+            <color red="0.93000000000000005" green="0.70999999999999996" blue="0.76000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

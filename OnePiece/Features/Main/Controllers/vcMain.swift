@@ -10,8 +10,12 @@ import UIKit
 class vcMain: UIViewController {
 
     // MARK: IBOutlets
+    @IBOutlet weak var btQuit: UIButton!
     
     // MARK: IBActions
+    @IBAction func btQuitAction(_ sender: Any) {
+        exit(0)
+    }
     
     // MARK: Public properties
     

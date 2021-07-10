@@ -72,6 +72,9 @@
                                                     <constraint firstAttribute="width" secondItem="f2Y-rP-FBg" secondAttribute="height" multiplier="1:1" id="bce-Uv-Kcq"/>
                                                 </constraints>
                                                 <state key="normal" image="mgSplash_Salir"/>
+                                                <connections>
+                                                    <action selector="btQuitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frQ-rR-RLp"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUH-ba-3a7">
                                                 <rect key="frame" x="38" y="104.5" width="28.5" height="104.5"/>
@@ -95,6 +98,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dip-DZ-01Z"/>
+                    <connections>
+                        <outlet property="btQuit" destination="f2Y-rP-FBg" id="DbL-HG-G8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,7 +174,7 @@
         <image name="mgSplash_Personaje" width="199.5" height="198.5"/>
         <image name="mgSplash_Salir" width="200" height="198"/>
         <namedColor name="clApp">
-            <color red="0.83999999999999997" green="0.33000000000000002" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8399999737739563" green="0.33000001311302185" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
